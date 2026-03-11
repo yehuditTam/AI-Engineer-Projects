@@ -1,0 +1,99 @@
+{
+  "technical_decisions": [
+    {
+      "title": "PostgreSQL over MongoDB",
+      "summary": "Chose PostgreSQL for JSONB support, complex queries, Prisma integration, and ACID compliance",
+      "date": "2024-01-15",
+      "importance": "High",
+      "category": "Database"
+    },
+    {
+      "title": "Prisma as ORM",
+      "summary": "Selected Prisma for type-safe database access, automatic migrations, and connection pooling",
+      "date": "2024-01-15",
+      "importance": "High",
+      "category": "Database"
+    },
+    {
+      "title": "ChromaDB for Vector Storage",
+      "summary": "Adopted ChromaDB for native LlamaIndex integration, lightweight deployment, and metadata filtering",
+      "date": "2024-01-16",
+      "importance": "High",
+      "category": "Vector Store"
+    },
+    {
+      "title": "Next.js App Router",
+      "summary": "Implemented Next.js App Router for server components, built-in API routes, and streaming support",
+      "date": "2024-01-14",
+      "importance": "High",
+      "category": "Frontend"
+    },
+    {
+      "title": "Tailwind CSS over CSS Modules",
+      "summary": "Chose Tailwind for rapid prototyping, consistent design system, and smaller bundle size",
+      "date": "2024-01-14",
+      "importance": "Medium",
+      "category": "Frontend"
+    },
+    {
+      "title": "OpenAI GPT-4 as Primary LLM",
+      "summary": "Selected GPT-4 for superior reasoning and context understanding with GPT-3.5-turbo fallback",
+      "date": "2024-01-17",
+      "importance": "High",
+      "category": "LLM"
+    },
+    {
+      "title": "Streaming Responses",
+      "summary": "Enabled streaming for improved perceived performance and better UX in chat interface",
+      "date": "2024-01-18",
+      "importance": "Medium",
+      "category": "LLM"
+    },
+    {
+      "title": "Server-Side Processing Only",
+      "summary": "Restricted processing to server-side for security, consistency, and performance",
+      "date": "2024-01-16",
+      "importance": "High",
+      "category": "Architecture"
+    }
+  ],
+  "ui_rules": [
+    {
+      "rule": "RTL Support Mandatory",
+      "description": "Every component must support RTL layout for Hebrew",
+      "enforcement": "Strict"
+    },
+    {
+      "rule": "Brand Colors Only",
+      "description": "Deep Blue (#003366) and Gold (#D4AF37) only",
+      "enforcement": "Strict"
+    },
+    {
+      "rule": "No External Form Libraries",
+      "description": "Build forms with native HTML and React state only",
+      "enforcement": "Absolute Ban"
+    }
+  ],
+  "open_tasks": [
+    {
+      "task": "Add authentication",
+      "priority": "High",
+      "estimated_days": 2
+    },
+    {
+      "task": "Document management UI",
+      "priority": "High",
+      "estimated_days": 1
+    },
+    {
+      "task": "Improve error handling",
+      "priority": "Medium",
+      "estimated_days": 1
+    },
+    {
+      "task": "Add tests",
+      "priority": "Medium",
+      "estimated_days": 3
+    }
+  ]
+}

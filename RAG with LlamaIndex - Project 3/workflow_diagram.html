@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Workflow - תרשים זרימה</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 40px;
+        }
+        .workflow {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .step {
+            background: #f8f9fa;
+            border: 3px solid #003366;
+            border-radius: 15px;
+            padding: 20px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #003366;
+            text-align: center;
+            min-width: 300px;
+            transition: all 0.3s;
+        }
+        .step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,51,102,0.3);
+        }
+        .router {
+            background: #D4AF37;
+            color: white;
+            border-color: #D4AF37;
+        }
+        .branch {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+        .branch-item {
+            background: #e3f2fd;
+            border: 3px solid #2196F3;
+            border-radius: 15px;
+            padding: 20px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #1976D2;
+            text-align: center;
+            min-width: 200px;
+        }
+        .arrow {
+            font-size: 40px;
+            color: #003366;
+            text-align: center;
+        }
+        .label {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 תרשים זרימת מערכת RAG</h1>
+        <div class="workflow">
+            <div class="step">📝 קלט משתמש (Gradio UI)</div>
+            <div class="arrow">↓</div>
+            
+            <div class="step router">🔀 ניתוב (Router Event)</div>
+            <div class="label">סיווג: סמנטי או מובנה?</div>
+            <div class="arrow">↓</div>
+            
+            <div class="branch">
+                <div class="branch-item">
+                    🔍 חיפוש סמנטי<br>
+                    <small>(ChromaDB Vector)</small>
+                </div>
+                <div class="branch-item">
+                    📊 חיפוש מובנה<br>
+                    <small>(JSON Data)</small>
+                </div>
+            </div>
+            <div class="arrow">↓</div>
+            
+            <div class="step">🧠 סינתזת תשובה (Cohere LLM)</div>
+            <div class="arrow">↓</div>
+            
+            <div class="step">✅ תשובה סופית למשתמש</div>
+        </div>
+    </div>
+</body>
+</html>
