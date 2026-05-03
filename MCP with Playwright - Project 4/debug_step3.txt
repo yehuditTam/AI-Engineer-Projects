@@ -1,0 +1,20 @@
+svg | [object SVGAnimatedString] | undefined
+path | [object SVGAnimatedString] | undefined
+INPUT | empty | 
+LI |  | אתר החרמון
+LI |  | מרום גולן
+LI |  | הר בנטל
+LI |  | קרית שמונה
+LI |  | צפת
+LI |  | כרמיאל
+LI |  | טבריה
+LI |  | חיפה
+LI |  | נצרת
+LI |  | עפולה
+LI |  | חדרה
+LI |  | נתניה
+LI |  | כפר סבא
+LI |  | תל אביב
+LI |  | ראשון לציון
+LI |  | מודיעין
+LI |  | ירושלים
