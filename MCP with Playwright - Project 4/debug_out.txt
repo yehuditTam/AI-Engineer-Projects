@@ -1,0 +1,5 @@
+Weather site loaded successfully.
+Typed 'tel aviv' into search field.
+Clicked first result for 'tel aviv'.
+Weather data for tel aviv:
+Temperatures: 4, 6, 9, 3, 8, 2, 5, 0, 93, 94, 7, 65, 86, 76, 45, 1, 27, 39, 57, 63, 07, 96, 09, 97, 58, 95, 19, 53°C
